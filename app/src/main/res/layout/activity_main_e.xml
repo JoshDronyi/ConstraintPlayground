@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_stemStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="7dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_StemEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="113dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_topLine_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_midLine_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="275dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_midLine_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="392dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottomLine_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="118dp" />
+
+    <!--
+        End of Constraints
+    -->
+
+    <!--    Start Stem Buttons -->
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_2"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gl_topLine_bottom"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_4"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/gl_topLine_bottom" />
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_5"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_3" />
+
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_6"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_4" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_7"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_5" />
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/gl_midLine_bottom"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_6" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/gl_midLine_bottom"
+        app:layout_constraintBottom_toTopOf="@id/btn_9"/>
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_10"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_8" />
+
+    <Button
+        android:id="@+id/btn_10"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_11"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_9" />
+
+    <Button
+        android:id="@+id/btn_11"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_10"
+        app:layout_constraintBottom_toTopOf="@id/btn_12"/>
+
+    <Button
+        android:id="@+id/btn_12"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_13"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_11" />
+
+    <Button
+        android:id="@+id/btn_13"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_14"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_12" />
+
+    <Button
+        android:id="@+id/btn_14"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintStart_toStartOf="@id/gl_stemStart"
+        app:layout_constraintTop_toBottomOf="@id/btn_13" />
+    <!--End Stem Buttons-->
+
+    <!--    Top Bar Buttons Start-->
+
+    <Button
+        android:id="@+id/btn_15"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_16"
+        app:layout_constraintBottom_toTopOf="@id/btn_18"/>
+
+    <Button
+        android:id="@+id/btn_16"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_17"
+        app:layout_constraintBottom_toTopOf="@id/btn_19"/>
+
+    <Button
+        android:id="@+id/btn_17"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_20"/>
+
+    <Button
+        android:id="@+id/btn_18"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toBottomOf="@id/btn_15"
+        app:layout_constraintEnd_toStartOf="@id/btn_19"
+        app:layout_constraintBottom_toTopOf="@id/gl_topLine_bottom"
+        />
+    <Button
+        android:id="@+id/btn_19"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_18"
+        app:layout_constraintTop_toBottomOf="@id/btn_16"
+        app:layout_constraintEnd_toStartOf="@id/btn_20"
+        app:layout_constraintBottom_toTopOf="@id/gl_topLine_bottom"
+        />
+    <Button
+        android:id="@+id/btn_20"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_19"
+        app:layout_constraintTop_toBottomOf="@id/btn_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_topLine_bottom"
+        />
+
+    <!--    Top Bar Buttons End-->
+
+
+    <!--    Mid Bar Buttons Start-->
+
+    <Button
+        android:id="@+id/btn_21"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toTopOf="@id/gl_midLine_top"
+        app:layout_constraintEnd_toStartOf="@id/btn_22"
+        app:layout_constraintBottom_toTopOf="@id/btn_24"/>
+
+    <Button
+        android:id="@+id/btn_22"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_21"
+        app:layout_constraintTop_toTopOf="@id/gl_midLine_top"
+        app:layout_constraintEnd_toStartOf="@id/btn_23"
+        app:layout_constraintBottom_toTopOf="@id/btn_25"/>
+
+    <Button
+        android:id="@+id/btn_23"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_22"
+        app:layout_constraintTop_toTopOf="@id/gl_midLine_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_26"/>
+
+    <Button
+        android:id="@+id/btn_24"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toBottomOf="@id/btn_21"
+        app:layout_constraintEnd_toStartOf="@id/btn_25"
+        app:layout_constraintBottom_toTopOf="@id/gl_midLine_bottom"
+        />
+    <Button
+        android:id="@+id/btn_25"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_24"
+        app:layout_constraintTop_toBottomOf="@id/btn_22"
+        app:layout_constraintEnd_toStartOf="@id/btn_26"
+        app:layout_constraintBottom_toTopOf="@id/gl_midLine_bottom"
+        />
+    <Button
+        android:id="@+id/btn_26"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_25"
+        app:layout_constraintTop_toBottomOf="@id/btn_23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gl_midLine_bottom"
+        />
+    <!--    Mid Bar Buttons ENd-->
+
+    <!--    Bottom Bar Buttons Start-->
+
+    <Button
+        android:id="@+id/btn_27"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toTopOf="@id/gl_bottomLine_top"
+        app:layout_constraintEnd_toStartOf="@id/btn_28"
+        app:layout_constraintBottom_toTopOf="@id/btn_30"/>
+
+    <Button
+        android:id="@+id/btn_28"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_27"
+        app:layout_constraintTop_toTopOf="@id/gl_bottomLine_top"
+        app:layout_constraintEnd_toStartOf="@id/btn_29"
+        app:layout_constraintBottom_toTopOf="@id/btn_31"/>
+
+    <Button
+        android:id="@+id/btn_29"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_28"
+        app:layout_constraintTop_toTopOf="@id/gl_bottomLine_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_32"/>
+
+    <Button
+        android:id="@+id/btn_30"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/gl_StemEnd"
+        app:layout_constraintTop_toBottomOf="@id/btn_27"
+        app:layout_constraintEnd_toStartOf="@id/btn_31"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/btn_31"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_30"
+        app:layout_constraintTop_toBottomOf="@id/btn_28"
+        app:layout_constraintEnd_toStartOf="@id/btn_32"
+app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/btn_32"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/btn_31"
+        app:layout_constraintTop_toBottomOf="@id/btn_29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <!--    Bottom Bar Buttons End-->
+</androidx.constraintlayout.widget.ConstraintLayout>
